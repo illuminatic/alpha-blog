@@ -1,3 +1,3 @@
 # README
 
-for the rails course
+for the rails course 1.0
