@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
+.style_image {
+    text-align: center
+}
