@@ -6,19 +6,19 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Alpha-Blog</a>
+        <%= link_to "Alpha Blog", root_path, class: "navbar-brand", id: "logo" %>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="#">Home</a></li>
+        <li><%= link_to "Articles", articles_path %></li>
         <li><a href="#">Products</a></li>
         <li><a href="#">Gallery</a></li>
 
         <!--here starts the dropdown-->
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Stores <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Actions <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Store 1</a></li>
+            <li><%= link_to "New Article", new_article_path %> </li>
             <li><a href="#">Store 2</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">Store 1 in X</a></li>

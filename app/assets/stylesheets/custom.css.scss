@@ -1,4 +1,62 @@
-$navbar-default-bg: #4d94ff;
+$navbar-default-bg: black;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#logo{
+  float: left;
+  font-size: 1.7em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#logo:hover{
+  color: white;
+  text-decoration: none;
+}
+
+.center{
+  text-align: center;
+}
+
+.jumbotron{
+  background-image: asset-url('Baum.jpg');
+  background-size: cover;
+  height: 550px;
+}
+
+.jumbotron h1{
+  color: white;
+  text-align: center;
+  margin-top: 180px;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.btn-xlarge{
+  background-color: black;
+  font-size: 1.7em;
+}
+
+footer{
+  margin-top: 10px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+ footer small{
+   float: left;
+ }
+
+ footer ul{
+   float: right;
+   list-style: none;
+ }
+
+ footer ul li {
+   float: left;
+   margin-left: 15px;
+ }
