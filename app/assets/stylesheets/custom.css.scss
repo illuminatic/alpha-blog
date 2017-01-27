@@ -3,6 +3,11 @@ $navbar-default-bg: black;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.navbar{
+  margin-bottom: 0px;
+  border-radius: 0;
+}
+
 #logo{
   float: left;
   font-size: 1.7em;
@@ -22,30 +27,41 @@ $navbar-default-bg: black;
 }
 
 .jumbotron{
-  background-image: asset-url('Baum.jpg');
+  background-image: asset-url('feather.JPG');
   background-size: cover;
-  height: 550px;
+  height: 592px;
+  margin-bottom: 7px;
 }
 
 .jumbotron h1{
   color: white;
   text-align: center;
-  margin-top: 180px;
+  margin-top: 15px;
   margin-bottom: 30px;
-  letter-spacing: -1px;
+  letter-spacing: -8px;
   font-weight: bold;
 }
 
 .btn-xlarge{
   background-color: black;
   font-size: 1.7em;
+  border-color: transparent;
+}
+
+.btn-danger:hover{
+  border-color: transparent;
+  background-color: black;
 }
 
 footer{
-  margin-top: 10px;
-  padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: #777;
+
+  //padding-top: 5px;
+  border-top: 0px solid #eaeaea;
+  //color: #777;
+  //background-color: #f2f2f2;
+  padding-bottom: 0px;
+  padding-top: 11px;
+  margin: -0px 12px 0px 11px;
 }
  footer small{
    float: left;
