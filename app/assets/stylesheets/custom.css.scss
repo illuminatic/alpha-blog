@@ -3,12 +3,12 @@ $navbar-default-bg: black;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.navbar{
+.navbar {
   margin-bottom: 0px;
   border-radius: 0;
 }
 
-#logo{
+#logo {
   float: left;
   font-size: 1.7em;
   color: white;
@@ -17,23 +17,23 @@ $navbar-default-bg: black;
   font-weight: bold;
 }
 
-#logo:hover{
+#logo:hover {
   color: white;
   text-decoration: none;
 }
 
-.center{
+.center {
   text-align: center;
 }
 
-.jumbotron{
+.jumbotron {
   background-image: asset-url('feather.JPG');
   background-size: cover;
   height: 570px;
   margin-bottom: 7px;
 }
 
-.jumbotron h1{
+.jumbotron h1 {
   color: white;
   text-align: center;
   margin-top: 15px;
@@ -42,35 +42,40 @@ $navbar-default-bg: black;
   font-weight: bold;
 }
 
-.btn-xlarge{
+.btn-xlarge {
   background-color: black;
   font-size: 1.7em;
   border-color: transparent;
 }
 
-.btn-danger:hover{
+.btn-danger:hover {
   border-color: transparent;
   background-color: black;
 }
 
-#foot{
+#foot {
   background-color: black;
 }
 
-footer{
+footer {
   color: #777;
   padding-top: 11px;
 }
- footer small{
-   float: left;
- }
 
- footer ul{
-   float: right;
-   list-style: none;
- }
+footer small {
+  float: left;
+}
 
- footer ul li {
-   float: left;
-   margin-left: 15px;
- }
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
+
+#row-msg {
+  padding-top: 10px;
+}
