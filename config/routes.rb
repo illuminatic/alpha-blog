@@ -4,4 +4,8 @@ Rails.application.routes.draw do
   get 'pages/about', to: 'pages#about'
 
   resources :articles
+
+  get 'singup', to: 'users#new'
+  # post 'users', to: 'users#create'
+  resources :users, except: [:new]
 end
