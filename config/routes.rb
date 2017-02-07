@@ -6,6 +6,5 @@ Rails.application.routes.draw do
   resources :articles
 
   get 'singup', to: 'users#new'
-  # post 'users', to: 'users#create'
-  resources :users, except: [:new]
+  resources :users, except: [:new] # post 'users', to: 'users#create'
 end
