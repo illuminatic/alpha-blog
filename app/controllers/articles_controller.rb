@@ -1,4 +1,6 @@
 class ArticlesController < ApplicationController
+  #with the before_action you use the following set_article method to have the @article ready
+  # for edit, update, show and destroy action
   before_action :set_article, only: [:edit, :update, :show, :destroy]
 
   def index
