@@ -2,6 +2,8 @@ class ArticlesController < ApplicationController
   #with the before_action you use the following set_article method to have the @article ready
   # for edit, update, show and destroy action
   before_action :set_article, only: [:edit, :update, :show, :destroy]
+  before_action :require_user, except: [:index, :show]
+  before_action :require_same_user, only: [:edit, :update, :destroy]
 
   def index
     @articles = Article.paginate(page: params[:page], per_page: 5)
@@ -57,5 +59,12 @@ class ArticlesController < ApplicationController
 
   def article_params
     params.require(:article).permit(:title, :description)
+  end
+
+  def require_same_user
+    if current_user != @article.user
+      flash[:danger] = "you can only delete or edit your own articles"
+      redirect_to root_path
+    end
   end
 end

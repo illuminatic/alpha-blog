@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   #with the before_action you use the following set_user method to the edit,
   # update and show method at the beginning
   before_action :set_user, only: [:edit, :update, :show]
+  before_action :require_same_user, only: [:edit, :update]
 
   def index
     #paginate will only display the numbers of items per_page
@@ -45,6 +46,13 @@ class UsersController < ApplicationController
 
   def set_user
     @user = User.find(params[:id])
+  end
+
+  def require_same_user
+    if current_user != @user
+      flash[:danger] = "you can only edit your own account"
+      redirect_to root_path
+    end
   end
 
 end
