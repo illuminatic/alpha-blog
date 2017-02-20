@@ -21,7 +21,7 @@ class ArticlesController < ApplicationController
     debugger
     @article = Article.new(article_params)
     # that line help to have an user for the model
-    @article.user = User.first
+    @article.user = current_user
 
     if @article.save
       flash[:success] = "Article was succefully created"
