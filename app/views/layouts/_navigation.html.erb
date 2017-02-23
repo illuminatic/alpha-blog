@@ -36,13 +36,15 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Your
                 profile <%="Admin" if current_user.admin? %> <span class="glyphicon glyphicon-cog"></span>
               <ul class="dropdown-menu">
-                <li><%= link_to "Show your profile", user_path(current_user) %> </li>
-                <li><%= link_to "Edit your profile", edit_user_path(current_user) %> </li>
+                <li><%= link_to '<i class="glyphicon glyphicon-search"></i> View'.html_safe, user_path(current_user) %> </li>
+                <li><%= link_to '<i class="glyphicon glyphicon-pencil"></i> Edit'.html_safe, edit_user_path(current_user) %> </li>
+                <li role="separator" class="divider"></li>
+                <li><%= link_to '<i class="glyphicon glyphicon-log-out"></i> Log out'.html_safe, logout_path, method: :delete %></li>
               </ul>
             <!--</li>-->
             <!--here finish the dorpdown-->
 
-            <li><%= link_to '<i class="glyphicon glyphicon-log-out"></i> Log out'.html_safe, logout_path, method: :delete %></li>
+
         <% else %>
             <li><%= link_to '<i class="glyphicon glyphicon-log-in"></i> Login'.html_safe, login_path %></li>
             <li><%= link_to '<i class="glyphicon glyphicon-chevron-up"></i> Signup'.html_safe, signup_path %></li>
