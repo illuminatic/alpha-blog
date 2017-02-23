@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  has_many :articles
+  has_many :articles, dependent: :destroy # dependent: :destroy meand that all articles will be deleted if the user is deleted
   before_save {self.email = email.downcase}
   validates :username, presence: true,
             uniqueness: { case_sensitive: false},
