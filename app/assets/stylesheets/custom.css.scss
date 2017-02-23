@@ -3,6 +3,10 @@ $navbar-default-bg: black;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.col-xs-10{
+  min-height: 0px;
+}
+
 .navbar {
   margin-bottom: 0px;
   border-radius: 0;
