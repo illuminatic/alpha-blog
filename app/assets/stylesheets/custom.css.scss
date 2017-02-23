@@ -7,6 +7,10 @@ $navbar-default-bg: black;
   min-height: 0px;
 }
 
+.alert{
+  margin-bottom: 0px;
+}
+
 .navbar {
   margin-bottom: 0px;
   border-radius: 0;
@@ -33,7 +37,7 @@ $navbar-default-bg: black;
 .jumbotron {
   background-image: asset-url('feather.jpg');
   background-size: cover;
-  height: 540px;
+  height: 594px;
   margin-bottom: 7px;
 }
 
@@ -64,10 +68,13 @@ $navbar-default-bg: black;
 footer {
   //color: #777;
   //padding-top: 11px;
-  margin-top: 13px;
-  padding-top: 11px;
+  margin-top: 29px;
+  padding-top: 6px;
   border-top: 1px solid #eaeaea;
+  margin-left: 10px;
+  margin-right: 10px;
   color: #777;
+
 }
 
 footer small {
@@ -117,5 +124,9 @@ footer ul li {
 .listing {
   list-style: none;
   padding-left: 0;
+}
+
+.debug_dump{
+  margin: 46px 20px 10px 50px;
 }
 
