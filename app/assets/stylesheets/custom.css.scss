@@ -65,16 +65,17 @@ $navbar-default-bg: black;
   background-color: black;
 }
 
-footer {
-  //color: #777;
-  //padding-top: 11px;
-  margin-top: 29px;
-  padding-top: 6px;
-  border-top: 1px solid #eaeaea;
-  margin-left: 10px;
-  margin-right: 10px;
-  color: #777;
 
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+footer a:hover {
+  color: #222;
 }
 
 footer small {
@@ -90,6 +91,29 @@ footer ul li {
   float: left;
   margin-left: 15px;
 }
+
+//footer {
+//  margin-top: 29px;
+//  padding-top: 6px;
+//  border-top: 1px solid #eaeaea;
+//  margin-left: 10px;
+//  margin-right: 10px;
+//  color: #777;
+//}
+//
+//footer small {
+//  float: left;
+//}
+//
+//footer ul {
+//  float: right;
+//  list-style: none;
+//}
+//
+//footer ul li {
+//  float: left;
+//  margin-left: 15px;
+//}
 
 #row-msg {
   padding-top: 10px;
@@ -126,7 +150,4 @@ footer ul li {
   padding-left: 0;
 }
 
-.debug_dump{
-  margin: 46px 20px 10px 50px;
-}
 
